@@ -7,14 +7,23 @@
     <header>
 
     </header>
-    <main>
-        <h1>freeCodeCamp Survey Form</h1>
-        <p>Thank you for taking the time to help us improve the platform</p>
+    <main >
+        <h1 style="display: flex; flex-direction: column;justify-content: center; align-items: center;">freeCodeCamp Survey Form</h1>
+        <p style="display: flex; flex-direction: column;justify-content: center; align-items: center;">Thank you for taking the time to help us improve the platform</p>
+        <form>
         <form>
             <label for="Name">Name:</label><br>
-            <input type="text" id="Name" name="Name" placeholder="Enter your name" required><br>
+            <input type="text" id="name-label" name="Name" placeholder="Enter your name" required><br>
             <label for="Email">Email:</label><br>
-            <input type="text" id="Email" name="Email" placeholder="Enter Your Email" required>
+            <input type="email" id="email-label" name="Email" placeholder="Enter Your Email" required><br>
+            <label for="Email">Number</label><br>
+            <input type="text" id="number-label" pattern="[789][0-9]{9}" placeholder="Enter Your Phone number"><br>
+            <label for="Email">Your Car</label><br>
+            <select>
+                <option value="0">Select car:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                </select><br>
           </form>
 
           
@@ -36,30 +45,37 @@
 
           <form>
             <h3>What would you like to see improved? (Check all that apply)</h3>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="01">
             <label for="Front-end Projects"> Front-end Projects</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="02">
             <label for="vehicle2"> Back-end Projects</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Data Visualization</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="03">
+            <label for="vehicle3"> Data Visualization</label><br>
 
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Challenges</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Open Source Community</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Gitter help rooms</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Videos</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> City Meetups</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Wiki</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Forum</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Additional Courses</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="04">
+            <label for="vehicle3"> Challenges</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="05">
+            <label for="vehicle3"> Open Source Community</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="06">
+            <label for="vehicle3"> Gitter help rooms</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="07">
+            <label for="vehicle3"> Videos</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="08">
+            <label for="vehicle3"> City Meetups</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="09">
+            <label for="vehicle3"> Wiki</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="10">
+            <label for="vehicle3"> Forum</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="11">
+            <label for="vehicle3"> Additional Courses</label><br>
           </form>
+          <form>
+            <label for="textarea">Text-Area:</label><br>
+            <textarea rows="4" cols="50" name="comment" form="usrform">
+                Enter text here...</textarea>
+          </form>
+          <button>hello</button>
+        </form>
     </main>
     <footer>
 
