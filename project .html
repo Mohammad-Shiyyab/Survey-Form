@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <link rel="stylesheet" href="project.css">
+    
 </head>
 <body>
     <header>
-
+        
     </header>
     <main >
-        <h1 style="display: flex; flex-direction: column;justify-content: center; align-items: center;">freeCodeCamp Survey Form</h1>
-        <p style="display: flex; flex-direction: column;justify-content: center; align-items: center;">Thank you for taking the time to help us improve the platform</p>
+        <div class="rb-box">
+
+            <h1 >freeCodeCamp Survey Form</h1>
+            <p >Thank you for taking the time to help us improve the platform</p>
+    
         <form>
         <form>
-            <label for="Name">Name:</label><br>
-            <input type="text" id="name-label" name="Name" placeholder="Enter your name" required><br>
-            <label for="Email">Email:</label><br>
-            <input type="email" id="email-label" name="Email" placeholder="Enter Your Email" required><br>
-            <label for="Email">Number</label><br>
-            <input type="text" id="number-label" pattern="[789][0-9]{9}" placeholder="Enter Your Phone number"><br>
-            <label for="Email">Your Car</label><br>
-            <select>
+            <label class="label-form" for="Name">Name:</label><br>
+            <input class="inputcss" type="text" id="name-label" name="Name" placeholder="Enter your name" required><br><br>
+            <label class="label-form" for="Email">Email:</label><br>
+            <input class="inputcss" type="email" id="email-label" name="Email" placeholder="Enter Your Email" required><br><br>
+            <label class="label-form" for="Email">Number</label><br>
+            <input class="inputcss" type="text" id="number-label" pattern="[789][0-9]{9}" placeholder="Enter Your Phone number"><br><br>
+            <label class="label-form" for="Email">Your Car</label><br>
+            <select style="width: 100%;"  class="inputcss">
                 <option value="0">Select car:</option>
                 <option value="1">Audi</option>
                 <option value="2">BMW</option>
@@ -69,20 +73,20 @@
             <input type="checkbox" id="vehicle3" name="vehicle3" value="11">
             <label for="vehicle3"> Additional Courses</label><br>
           </form>
-          <form>
-            <label for="textarea">Text-Area:</label><br>
-            <textarea rows="4" cols="50" name="comment" form="usrform">
-                Enter text here...</textarea>
+          <form><br><br>
+            <label style="display: flex; justify-content: center;" for="textarea">Any comments or suggestions?</label><br><br>
+            <textarea rows="4" cols="50" placeholder="Enter your comment"></textarea>
           </form>
-          <button>hello</button>
+          <div class="button-box">
+          <button>Submit</button></div>
         </form>
+    </div>
     </main>
     <footer>
 
     </footer>
 </body>
 </html>
-
 
 
 
